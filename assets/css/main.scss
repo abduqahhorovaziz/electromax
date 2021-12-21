@@ -1,0 +1,73 @@
+/*===== LOCAL FONTS =====*/
+
+@font-face {
+    font-family: "Product Sans Black";
+    src: url("../fonts/FontsFree-Net-ProductSans-Black.ttf");
+}
+
+@font-face {
+    font-family: "Product Sans Medium";
+    src: url("../fonts/FontsFree-Net-ProductSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Product Sans Regular";
+    src: url("../fonts/FontsFree-Net-ProductSans-Regular.ttf");
+}
+
+/*===== FONTS =====*/
+:root {
+    --body-font: "Product Sans Regular", sans-serif;
+    --button-font: "Product Sans Medium", sans-serif;
+    --normal-font: "Product Sans Regular", sans-serif;
+  }
+
+
+/*===== COLORS =====*/
+:root{
+    --first-color: #036DB9;
+    --second-color: #81D100;
+}
+
+/*===== z index =====*/
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
