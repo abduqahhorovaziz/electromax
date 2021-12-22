@@ -204,6 +204,12 @@ img {
                         margin-top: 16px;
                         color: #FFFFFF;
 
+                        span{
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+
                     }
                 }
             }
@@ -527,3 +533,204 @@ img {
         }
     }
 }
+
+
+.l__install{
+    width: 100%;
+    height: 594px;
+    .install{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        .install__left{
+            width: 945px;
+            height: 100%;
+            background-image: url(../img/install/proektirovanie-osvesheniya_03.png);
+        }
+        .install__rigth{
+            width: 977px;
+            height: 100%;
+            background: #036DB9;
+            background-image: url(../img/install/MaskGroup.png);
+            padding-left: 30px;
+            position: relative;
+
+            h2{
+                font-family:var(--black-font);
+                font-style: normal;
+                font-weight: 900;
+                font-size: 45px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin-top: 162px;
+            }
+
+            ul{
+                margin-top: 32px;
+                li{
+                    display:flex;
+                    font-family: var(--normal-font);
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                    margin-top:16px;
+                    img{
+                        margin-right: 12px;
+                    }
+                }
+            }
+
+            .drill{
+                position:absolute;
+                right: 0;
+                top:116px;
+            }
+            .bolt__1{
+                position:absolute;
+                left: 362px;
+                top:24px;
+            }
+            .plier{
+                position:absolute;
+                left: 454px;
+                top:-59px;
+            }
+            .bolt__2{
+                position:absolute;
+                right: 90px;
+                top:24px;
+            }
+            .bolt__3{
+                position:absolute;
+                left: 578px;
+                top:304px;
+            }
+            .bolt__4{
+                position:absolute;
+                bottom: 52px;
+                right: 290px;
+            }
+            .screwdriver{
+                position:absolute;
+                // bottom: -30px;
+                left: 220px;
+            }
+        }
+    }
+}
+
+.l__portfolio{
+    width: 100%;
+    height: 540px;
+    padding-top: 70px;
+    .portfolio{
+        width: 1725px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 2;
+
+        .pos__box{
+            width: 33%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 2;
+            left: 0;
+            display: flex;
+
+            .box__one{
+                width: 50%;
+                height: 100%;
+            }
+            .box__two{
+                width: 50%;
+                height: 100%;
+                background-color: #FFFFFF;
+                padding-left: 10px;
+
+                h1{
+                    font-family: Product Sans Black;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 45px;
+                    line-height: 55px;
+                    margin-top: 100px;
+                    color: #036DB9;
+                }
+            }
+
+        }
+        .pos__box__two{
+            width: 17%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            right: 0;
+            z-index: 3;
+        }
+
+
+
+
+        .owl-carousel{
+           
+            .item{
+                width: 255px;
+                height: 400px;
+                background: #C4C4C4;
+                border-radius: 12px;
+                background-image: url(../img/portfolio/port-1.png);              
+
+                
+            }
+            .item__two{
+                background-image: url(../img/portfolio/port-2.png);
+            }
+            .item__three{
+                background-image: url(../img/portfolio/port-3.png);
+            }
+            .item__four{
+                background-image: url(../img/portfolio/port-4.png);
+            }
+            .item__five{
+                background-image: url(../img/portfolio/port-5.png);
+            }
+            .item__six{
+                background-image: url(../img/portfolio/port-1.png);
+            }
+
+            
+            
+             }
+             .owl-nav{
+                position: absolute;
+                z-index: 10;
+                top: 85%;
+                left: 18%;
+                display: none;
+                .owl-prev{
+                    width: 60px;
+                    height: 60px;
+                    border-radius:50%;
+                    border: 1px solid;
+
+                }
+                .owl-next{
+                    width: 60px;
+                    height: 60px;
+                    border-radius:50%;
+                    border: 1px solid;
+                }
+                
+            }
+            .owl-dots{
+                display: none !important;
+            }
+        }
+
+    }

@@ -242,6 +242,12 @@ img {
   color: #FFFFFF;
 }
 
+.l__main .home .left__side .left__inside .service__box p span {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .l__main .home .right__side img {
   margin-right: 120px;
 }
@@ -577,5 +583,222 @@ img {
 
 .l__experts .experts .expert__right {
   padding-top: 67px;
+}
+
+.l__install {
+  width: 100%;
+  height: 594px;
+}
+
+.l__install .install {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l__install .install .install__left {
+  width: 945px;
+  height: 100%;
+  background-image: url(../img/install/proektirovanie-osvesheniya_03.png);
+}
+
+.l__install .install .install__rigth {
+  width: 977px;
+  height: 100%;
+  background: #036DB9;
+  background-image: url(../img/install/MaskGroup.png);
+  padding-left: 30px;
+  position: relative;
+}
+
+.l__install .install .install__rigth h2 {
+  font-family: var(--black-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 50px;
+  color: #FFFFFF;
+  margin-top: 162px;
+}
+
+.l__install .install .install__rigth ul {
+  margin-top: 32px;
+}
+
+.l__install .install .install__rigth ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: var(--normal-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+
+.l__install .install .install__rigth ul li img {
+  margin-right: 12px;
+}
+
+.l__install .install .install__rigth .drill {
+  position: absolute;
+  right: 0;
+  top: 116px;
+}
+
+.l__install .install .install__rigth .bolt__1 {
+  position: absolute;
+  left: 362px;
+  top: 24px;
+}
+
+.l__install .install .install__rigth .plier {
+  position: absolute;
+  left: 454px;
+  top: -59px;
+}
+
+.l__install .install .install__rigth .bolt__2 {
+  position: absolute;
+  right: 90px;
+  top: 24px;
+}
+
+.l__install .install .install__rigth .bolt__3 {
+  position: absolute;
+  left: 578px;
+  top: 304px;
+}
+
+.l__install .install .install__rigth .bolt__4 {
+  position: absolute;
+  bottom: 52px;
+  right: 290px;
+}
+
+.l__install .install .install__rigth .screwdriver {
+  position: absolute;
+  left: 220px;
+}
+
+.l__portfolio {
+  width: 100%;
+  height: 540px;
+  padding-top: 70px;
+}
+
+.l__portfolio .portfolio {
+  width: 1725px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.l__portfolio .portfolio .pos__box {
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l__portfolio .portfolio .pos__box .box__one {
+  width: 50%;
+  height: 100%;
+}
+
+.l__portfolio .portfolio .pos__box .box__two {
+  width: 50%;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-left: 10px;
+}
+
+.l__portfolio .portfolio .pos__box .box__two h1 {
+  font-family: Product Sans Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 55px;
+  margin-top: 100px;
+  color: #036DB9;
+}
+
+.l__portfolio .portfolio .pos__box__two {
+  width: 17%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  right: 0;
+  z-index: 3;
+}
+
+.l__portfolio .portfolio .owl-carousel .item {
+  width: 255px;
+  height: 400px;
+  background: #C4C4C4;
+  border-radius: 12px;
+  background-image: url(../img/portfolio/port-1.png);
+}
+
+.l__portfolio .portfolio .owl-carousel .item__two {
+  background-image: url(../img/portfolio/port-2.png);
+}
+
+.l__portfolio .portfolio .owl-carousel .item__three {
+  background-image: url(../img/portfolio/port-3.png);
+}
+
+.l__portfolio .portfolio .owl-carousel .item__four {
+  background-image: url(../img/portfolio/port-4.png);
+}
+
+.l__portfolio .portfolio .owl-carousel .item__five {
+  background-image: url(../img/portfolio/port-5.png);
+}
+
+.l__portfolio .portfolio .owl-carousel .item__six {
+  background-image: url(../img/portfolio/port-1.png);
+}
+
+.l__portfolio .portfolio .owl-nav {
+  position: absolute;
+  z-index: 10;
+  top: 85%;
+  left: 18%;
+  display: none;
+}
+
+.l__portfolio .portfolio .owl-nav .owl-prev {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.l__portfolio .portfolio .owl-nav .owl-next {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.l__portfolio .portfolio .owl-dots {
+  display: none !important;
 }
 /*# sourceMappingURL=main.css.map */
