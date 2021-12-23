@@ -237,10 +237,36 @@
 
                 <div class="expert__button">
                     <img src="assets/img/experts/phone.png" alt="">
-                    <a href="#">Ekspert bilan bepul bog'lanish</a>
+                    <button id="myBtn">Ekspert bilan bepul bog'lanish</button>
                 </div>
 
             </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="modal-header">
+                        <h2> Ekspert bilan bog'lanish </h2>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="get">
+                            <label for="name">Ismingizni kiriting</label> <br>
+                            <input type="text" name="name"> <br>
+                            <label for="phone">Telefon raqamingiz</label> <br>
+                            <input type="number" name="phone" placeholder="+998"> <br>
+                            <button type="submit">
+                                Jo'natish 
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="expert__right">
                 <img src="assets/img/experts/experts.png" alt="">
             </div>
@@ -444,19 +470,27 @@
         <div class="faq">
             <button class="collapsible">“Vklyuchatel” turlarining bir-biridan farqi nimada?</button>
             <div class="content">
-              <p>Batafsil ma'lumotlarni +998 55 500 95 00 nomerimizga qo'ng'iroq qilish orqali bilib olishingiz mumkin </p>
+                <p>Batafsil ma'lumotlarni +998 55 500 95 00 nomerimizga qo'ng'iroq qilish orqali bilib olishingiz mumkin
+                </p>
             </div>
             <button class="collapsible">Qanday qilib sizlardan tovar xarid qilish mumkin?</button>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
             </div>
             <button class="collapsible">Elektrikni uygacha chaqirish necha pul turadi?</button>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
             </div>
-            <button class="collapsible">Yangi binoga qurilishning qaysi etapida elektromontaj ishlari qilinishi kerak?</button>
+            <button class="collapsible">Yangi binoga qurilishning qaysi etapida elektromontaj ishlari qilinishi
+                kerak?</button>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
             </div>
         </div>
     </main>

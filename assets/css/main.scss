@@ -263,6 +263,12 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: .3s ease;
+
+        &:hover{
+            transform: scale(1.1);
+
+        }
 
         a {
             font-family: var(--button-font);
@@ -475,18 +481,22 @@ img {
             }
 
             .expert__button {
-                width: 382px;
-                height: 70px;
-                margin-top: 50px;
-                cursor: pointer;
-                background: linear-gradient(90deg, #81d100 0%, #71b800 100%);
-                box-shadow: 0px 10px 15px rgba(129, 209, 0, 0.3);
-                border-radius: 35px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+             
+                
 
-                a {
+                button {
+                    width: 382px;
+                    height: 70px;
+                    margin-top: 50px;
+                    cursor: pointer;
+                    background: linear-gradient(90deg, #81d100 0%, #71b800 100%);
+                    box-shadow: 0px 10px 15px rgba(129, 209, 0, 0.3);
+                    border-radius: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    border: none;
                     font-family: var(--button-font);
                     font-style: normal;
                     font-weight: 500;
@@ -495,6 +505,13 @@ img {
                     text-align: center;
                     margin-left: 16px;
                     color: #ffffff;
+                    cursor: pointer;
+                    transition: .3s ease;
+                    &:hover{
+                        transform: scale(1.1);
+            
+                    }
+                   
                 }
             }
 
@@ -518,6 +535,147 @@ img {
         }
         .expert__right {
             padding-top: 67px;
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 50px 90px;
+            border: 1px solid #888;
+            width: 540px;
+            height: 487px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+            position: relative;
+
+            .close {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                display: block;
+                color: var(--second-color);
+                font-size: 32px;
+                font-weight: bold;
+            }
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            width: 100%;
+            h2 {
+                font-family: var(--black-font);
+                font-style: normal;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+                color: #036db9;
+            }
+        }
+
+        .modal-body {
+            padding: 2px 16px;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            margin-top: 32px;
+
+            label {
+                font-family: var(--button-font);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+            }
+
+            input {
+                width: 350px;
+                height: 60px;
+                padding: 24px 19px;
+                border: 1px solid #c1cad6;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-top: 10px;
+                margin-bottom: 24px;
+
+                &::placeholder {
+                    font-family: var(--button-font);
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #939aa3;
+                }
+            }
+
+            button {
+                width: 350px;
+                height: 70px;
+                border: none;
+                background: linear-gradient(90deg, #81d100 0%, #71b800 100%);
+                box-shadow: 0px 10px 15px rgba(129, 209, 0, 0.3);
+                border-radius: 35px;
+                cursor: pointer;
+                font-family: Product Sans Medium;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: #ffffff;
+            }
         }
     }
 }
@@ -1124,15 +1282,15 @@ img {
                 margin-left: 12px;
                 color: #939aa3;
 
-                span{
+                span {
                     font-family: var(--button-font);
                     color: #fff;
                 }
             }
         }
 
-        .social__box{
-            img{
+        .social__box {
+            img {
                 margin-right: 12px;
             }
         }
