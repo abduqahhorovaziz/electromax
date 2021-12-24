@@ -1308,7 +1308,8 @@ img {
 @media screen and (max-width: 480px) {
     .l__header {
         width: 100%;
-        padding: 10px 15px;
+        // padding: 10px 15px;
+        padding-left: 0px !important;
 
         .nav {
             width: 100%;
@@ -1340,9 +1341,9 @@ img {
         .home {
             width: 100%;
             display: block;
-
+            padding-left: 0px !important;
             .left__side {
-                padding-top: 40px;
+                padding-top: 0px;
                 h1 {
                     text-align: center;
                     font-size: 38px;
@@ -1386,11 +1387,11 @@ img {
 
             .product__box {
                 width: 320px;
-                height: 330px;
+                min-height: 330px;
                 margin-top: 30px;
 
                 .circle__bg {
-                    margin-left: 10px;
+                    margin-left: 0px;
                 }
             }
         }
@@ -1423,6 +1424,7 @@ img {
                     text-align: center;
                     padding-top: 50px;
                 }
+                padding-left: 0px !important;
 
                 .expert__button {
                     width: 100%;
@@ -1462,7 +1464,8 @@ img {
             }
 
             .modal {
-                width: 100%;
+                width: 100% !important;
+                overflow: hidden;
                 .modal-content {
                     width: 330px !important;
                     height: 450px;
@@ -1596,8 +1599,8 @@ img {
         padding-bottom: 20px;
 
         h1 {
-            font-size: 30px;
-            line-height: 35px;
+            font-size: 30px !important;
+            line-height: 35px !important;
         }
 
         .testimonials {
@@ -1648,27 +1651,28 @@ img {
         height: 365px;
         padding-top: 30px;
         h1 {
-            font-size: 25px;
-            line-height: 32px;
+            font-size: 25px !important;
+            line-height: 32px !important;
         }
         .partners {
             width: 100%;
             height: 100%;
 
             .owl-two {
+                width: 100% !important;
                 .owl-nav {
                     .owl-prev {
-                        width: 30px;
-                        height: 30px;
+                        width: 30px !important;
+                        height: 30px !important;
 
-                        left: 102px;
-                        top: 132px;
+                        left: 102px !important;
+                        top: 132px !important;
                     }
                     .owl-next {
-                        width: 30px;
-                        height: 30px;
-                        right: 116px;
-                        top: 132px;
+                        width: 30px !important;
+                        height: 30px !important;
+                        right: 116px !important;
+                        top: 132px !important;
                     }
 
                     button:hover {
@@ -1727,7 +1731,7 @@ img {
 
     .l__footer {
         width: 100%;
-        height: 400px;
+        height: 400px !important;
 
         .footer {
             width: 100%;
@@ -2041,6 +2045,281 @@ img {
             }
 
 
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .l__header{
+        padding-left: 70px;
+        overflow: hidden;
+
+        .nav{
+            width: 100%;
+
+            .nav__menu{
+                margin-left: 0;
+
+                .phone__contact{
+                    margin-left: 0;
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .l__main{
+        width: 100%;
+        overflow: hidden;
+
+        .home{
+            width: 100%;
+
+            .right__side{
+                img{
+                    width: 305px;
+
+                    margin-right: 65px;
+                }
+            }
+        }
+    }
+
+    .l__products{
+        width: 100%;
+        padding: 70px 40px ;
+        overflow: hidden;
+
+        .products{
+            width: 100%;
+        }
+    }
+
+    .l__cause{
+        width: 100%;
+        padding: 70px 40px;
+
+        .cause{
+            width: 100%;
+        }
+    }
+
+    .l__experts{
+        width: 100%;
+
+        .experts{
+            width: 100%;
+
+            .expert__right{
+                img{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .l__install{
+        width: 100%;
+
+        .install{
+            width: 100%;
+
+            .install__rigth{
+                .bolt__4{
+                    bottom: -43px;
+                }
+
+                .drill{
+                    width: 300px;
+                    top: 264px !important;
+                }
+
+                .screwdriver{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .l__portfolio{
+        width: 100%;
+        overflow: hidden;
+
+        .portfolio{
+            width: 100%;
+
+            .pos__box{
+                .box__two{
+                    h1{
+                        font-size: 32px;
+                        line-height: 39px;
+                    }
+                }
+            }
+
+
+            .owl-one{
+                .owl-item{
+                    width: 255px !important;
+                    margin-right: 30px !important;
+                    margin-bottom: 70px;
+                }
+            }
+        }
+    }
+
+    .l__testimonials{
+        width: 100%;
+        padding: 70px 30px;
+        .testimonials{
+            width: 100%;
+
+            .testimon__box{
+                width: 320px;
+                min-height: 190px;
+
+                .msg__box{
+                    width: 320px;
+                    height: 190px;
+
+                    img{
+                        width: 290px;
+                        height: auto;
+                    }
+
+                    .image__box{
+                        width: 290px;
+                        height: auto;
+
+                        .play__button{
+                            width: 60px;
+                            height: 60px;
+
+                            img{
+                                width: 30px;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .l__partners{
+        width: 100%;
+        overflow: hidden;
+
+        .partners{
+            width: 100%;
+
+            .owl-two{
+                width: 90%;
+                margin: auto;
+                .owl-nav{
+
+                    .owl-next{
+                        width: 40px;
+                        height: 40px;
+                        right: -53px;
+                    }
+                    .owl-prev{
+                        width: 40px;
+                        height: 40px;
+                        left: -16px;
+                    }
+                }
+                .owl-item{
+                    width: 255px !important;
+
+                }
+            }
+        }
+    }
+
+    .l__faq{
+        width: 100%;
+
+        .faq{
+            width: 100%;
+
+        }
+    }
+
+    .l__footer{
+        width: 100%;
+
+        .footer{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .l__main{
+        width: 100%;
+        height: 600px;
+
+        .home{
+            width: 100%;
+            padding-left: 70px;
+        }
+    }
+
+    .l__install{
+        width: 100%;
+        height: 594px;
+
+        .install{
+            width: 100%;
+            height: 100%;
+
+            .install__rigth{
+                .bolt__1{
+                    left: 64px;
+                }
+                .bolt__2{
+                    display: none;
+                }
+
+                .plier{
+                        display: none;
+                }
+                .drill{
+                    top: 25px;
+                }
+                .bolt__3{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .l__portfolio{
+        width: 100%;
+        overflow: hidden;
+        .portfolio{
+            width: 100%;
+
+            .owl-one{
+                .owl-item{
+                    width: 255px !important;
+                }
+            }
+        }
+    }
+
+    .l__partners{
+        overflow: hidden;
+    }
+
+    .l__experts{
+        .experts{
+            .expert__left{
+            padding-left: 70px;
+            }
         }
     }
 }
